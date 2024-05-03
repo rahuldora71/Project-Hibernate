@@ -1,9 +1,6 @@
 package org.example;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 //@Table(name = "myStudent")            for changing the name of table in database
@@ -14,12 +11,28 @@ public class Student {
 
     private String name;
     private String city;
+    private Certification certification;
+
+    public Student(int id, String name, String city, Certification certification) {
+        this.id = id;
+        this.name = name;
+        this.city = city;
+        this.certification = certification;
+    }
 
     public Student(int id, String name, String city) {
         super();
         this.id = id;
         this.name = name;
         this.city = city;
+    }
+
+    public Certification getCertification() {
+        return certification;
+    }
+
+    public void setCertification(Certification certification) {
+        this.certification = certification;
     }
 
     public Student() {
