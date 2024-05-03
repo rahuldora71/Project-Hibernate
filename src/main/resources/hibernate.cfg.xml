@@ -12,7 +12,9 @@
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hbm2ddl.auto">create</property> <!--for making table and update table-->
         <property name="show_sql">true</property>
-        <mapping class="org.example.Student"/>
+<!--        <mapping class="org.example.Student"/>-->
+        <mapping class="com.map.Question"/>
+        <mapping class="com.map.Answer"/>
 <!--        <mapping class="org.example.Address"/>-->
 
     </session-factory>
