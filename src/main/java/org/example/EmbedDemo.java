@@ -12,20 +12,20 @@ public class EmbedDemo {
         SessionFactory factory=configuration.buildSessionFactory();
 
         Student student=new Student();
-        student.setName("Vansh");
+        student.setName("Rajesh");
         student.setCity("Jind");
-        student.setId(125);
+        student.setId(127);
         Certification certification=new Certification();
-        certification.setCourse("Android");
-        certification.setDuration("6 Months");
+        certification.setCourse("Hibernate");
+        certification.setDuration("4 Months");
         student.setCertification(certification);
         Student student2=new Student();
-        student2.setName("Mohit");
-        student2.setCity("Ambala");
-        student2.setId(126);
+        student2.setName("Sahil");
+        student2.setCity("Safidon");
+        student2.setId(128);
         Certification certification2=new Certification();
-        certification2.setCourse("JAva Developer");
-        certification2.setDuration("12 Months");
+        certification2.setCourse("Web Developer");
+        certification2.setDuration("8 Months");
         student2.setCertification(certification2);
 
         Session session=factory.openSession();
