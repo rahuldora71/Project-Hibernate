@@ -10,11 +10,13 @@
         <property name="connection.user">root</property>
         <property name="connection.password">@Akanksha04</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="hbm2ddl.auto">create</property> <!--for making table and update table-->
+        <property name="hbm2ddl.auto">update</property> <!--for making table and update table-->
         <property name="show_sql">true</property>
 <!--        <mapping class="org.example.Student"/>-->
-        <mapping class="com.map.Question"/>
-        <mapping class="com.map.Answer"/>
+<!--        <mapping class="com.one_to_one_mapping.Question"/>-->
+<!--        <mapping class="com.one_to_one_mapping.Answer"/>-->
+        <mapping class="com.one_to_many_mapping.Question1"/>
+        <mapping class="com.one_to_many_mapping.Answer1"/>
 <!--        <mapping class="org.example.Address"/>-->
 
     </session-factory>

@@ -1,4 +1,4 @@
-package com.map;
+package com.one_to_one_mapping;
 
 import jakarta.persistence.*;
 
