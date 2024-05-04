@@ -72,13 +72,16 @@ public class MapDemo {
 
 
         tx.commit();
-////        Fetching
+////        Fetching via lazy loading .........
+//        if we use fetching property in  annotation then the loading type is Eager type
         System.out.println("===================");
         Question1 q=(Question1)session.get(Question1.class,1212);
+        System.out.println(q.getQuestionId());
         System.out.println(q.getQuestion() );
-        for (Answer1 a: q.getAnswer()){
-            System.out.println(a.getAnswer());
-        }
+        System.out.println(q.getAnswer().size());
+//        for (Answer1 a: q.getAnswer()){
+//            System.out.println(a.getAnswer());
+//        }
         System.out.println("===================");
 
 
