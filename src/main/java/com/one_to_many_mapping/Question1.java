@@ -10,7 +10,13 @@ public class Question1 {
     @Column(name = "question_id")
     private int questionId;
     private String question;
-    @OneToMany(mappedBy = "question1",fetch = FetchType.EAGER)    //fetching attribute for declare the fetch type
+    @OneToMany
+            (
+                    mappedBy = "question1",
+                    fetch = FetchType.EAGER,
+                    cascade = CascadeType.ALL
+            )
+    //fetching attribute for declare the fetch type
     private List<Answer1> answer1;
 
     public Question1() {

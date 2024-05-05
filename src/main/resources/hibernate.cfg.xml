@@ -13,14 +13,19 @@
         <property name="hbm2ddl.auto">update</property> <!--for making table and update table-->
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
+<!--        Property for Second level cache -->
+        <property name="cache.use_second_level_cache">true</property>
+<!--        <property name="cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</property>-->
+<!--        <property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>-->
         <mapping class="org.example.Student"/>
-        <mapping class="com.one_to_one_mapping.Question"/>
-        <mapping class="com.one_to_one_mapping.Answer"/>
+<!--        <mapping class="com.one_to_one_mapping.Question"/>-->
+<!--        <mapping class="com.one_to_one_mapping.Answer"/>-->
 <!--        <mapping class="com.one_to_many_mapping.Question1"/>-->
 <!--        <mapping class="com.one_to_many_mapping.Answer1"/>-->
 <!--        <mapping class="org.example.Address"/>-->
 <!--        <mapping class="com.many_to_many_mapping.Emp"/>-->
 <!--        <mapping class="com.many_to_many_mapping.Project"/>-->
 
+        <mapping resource="Person.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

@@ -1,8 +1,12 @@
 package org.example;
 
+import org.hibernate.annotations.Cache;
 import jakarta.persistence.*;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 @Entity
+//@Cacheable
+//@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 //@Table(name = "myStudent")            for changing the name of table in database
 public class Student {
 

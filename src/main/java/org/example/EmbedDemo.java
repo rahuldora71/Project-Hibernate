@@ -39,5 +39,32 @@ public class EmbedDemo {
         tx.commit();
         session.close();
         factory.close();
+
+
+
+//        for (int i = 1; i <= 35; i++) {
+//            Configuration configuration=new Configuration();
+//            configuration.configure();
+//            SessionFactory factory=configuration.buildSessionFactory();
+//
+//            Student student=new Student();
+//            student.setName("Name "+i);
+//            student.setCity("Jind "+i);
+//            student.setId(i);
+//            Certification certification=new Certification();
+//            certification.setCourse("Java Course "+i);
+//            certification.setDuration(i+" Months");
+//            student.setCertification(certification);
+//
+//            Session session=factory.openSession();
+//            Transaction tx=session.beginTransaction();
+////        Object Save
+//            session.save(student);
+//
+//            tx.commit();
+//            session.close();
+//            factory.close();
+//
+//        }
     }
 }
